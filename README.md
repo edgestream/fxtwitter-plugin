@@ -7,10 +7,10 @@ This development version is published as `fxtwitter-plugin-dev`.
 ## Usage
 
 ```bash
-python3 scripts/read_post.py 'https://x.com/OpenAI/status/2082577277246972300' --context
-python3 scripts/read_conversation.py 'https://x.com/OpenAI/status/2082577277246972300' --sort recent
-python3 scripts/read_profile.py OpenAI
-python3 scripts/read_author_feed.py OpenAI --limit 10
+python3 skills/fxtwitter/scripts/read_post.py 'https://x.com/OpenAI/status/2082577277246972300' --context
+python3 skills/fxtwitter/scripts/read_conversation.py 'https://x.com/OpenAI/status/2082577277246972300' --sort recent
+python3 skills/fxtwitter/scripts/read_profile.py OpenAI
+python3 skills/fxtwitter/scripts/read_author_feed.py OpenAI --limit 10
 ```
 
 See the full usage instructions in [`skills/fxtwitter/SKILL.md`](skills/fxtwitter/SKILL.md).

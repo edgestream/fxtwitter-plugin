@@ -9,7 +9,8 @@ Use this plugin's local Python script exclusively for public X content.
 
 ## Commands
 
-Run the request directly and use the JSON output as the source:
+The scripts are part of this skill in `scripts/`. Run these paths relative to
+this `SKILL.md`.
 
 ```bash
 python3 scripts/read_post.py 'https://x.com/OpenAI/status/2082577277246972300' --context
