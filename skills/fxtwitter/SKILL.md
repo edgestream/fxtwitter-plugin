@@ -18,6 +18,18 @@ python3 scripts/read_profile.py OpenAI
 python3 scripts/read_author_feed.py OpenAI --limit 10
 ```
 
+On Windows, always start the scripts in UTF-8 mode. This prevents a
+`UnicodeEncodeError` when post text contains characters absent from the active
+console code page:
+
+```powershell
+python -X utf8 scripts/read_post.py 'https://x.com/OpenAI/status/2082577277246972300' --context
+```
+
+Do not repeat an unchanged command after a `UnicodeEncodeError`. If a command
+was started without UTF-8 mode, repeat it once with `python -X utf8`; otherwise
+report the error rather than retrying.
+
 - `read_post.py` accepts an X post URL. `--context` uses the thread endpoint.
 - `read_conversation.py` accepts an X post URL. `--sort relevance` (default) sorts by
   likes; `--sort recent` sorts by recency. Pass the returned opaque cursor back

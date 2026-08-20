@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from typing import Any
 from urllib.parse import quote, urlencode, urlparse
 from urllib.request import Request, urlopen
@@ -11,6 +12,16 @@ from urllib.request import Request, urlopen
 API_ROOT = "https://api.fxtwitter.com/2"
 USER_AGENT = "fxtwitter-plugin-dev/0.0.1-dev (read-only)"
 X_HOSTS = {"x.com", "twitter.com", "mobile.twitter.com", "www.x.com", "www.twitter.com"}
+
+
+def configure_utf8_output() -> None:
+    """Keep JSON output usable on Windows consoles with legacy code pages."""
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
+    except (AttributeError, OSError):
+        # Non-standard streams need no special handling here; callers can still
+        # enforce UTF-8 with ``python -X utf8``.
+        pass
 
 
 def api_get(path: str, params: dict[str, str] | None = None) -> dict[str, Any]:
@@ -49,4 +60,5 @@ def encoded_handle(value: str) -> str:
 
 
 def print_json(payload: dict[str, Any]) -> None:
+    configure_utf8_output()
     print(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True))
