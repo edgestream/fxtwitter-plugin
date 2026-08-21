@@ -19,6 +19,8 @@
       "Read the OpenAI profile and show its latest 10 public posts.",
       "Read the OpenAI author profile."
     ],
-    "brandColor": "#1D9BF0"
+    "brandColor": "#1D9BF0",
+    "composerIcon": "./assets/fxtwitter.png",
+    "logo": "./assets/fxtwitter.png"
   }
 }
