@@ -1,0 +1,7 @@
+interface:
+  display_name: "fxTwitter"
+  short_description: "Read public X content through fxTwitter API v2"
+  icon_small: "./assets/fxtwitter.png"
+  icon_large: "./assets/fxtwitter.png"
+  brand_color: "#1D9BF0"
+  default_prompt: "Use $fxtwitter to read this public X post and its thread context."
