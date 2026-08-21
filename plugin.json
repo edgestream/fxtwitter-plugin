@@ -3,7 +3,7 @@
   "name": "fxtwitter-plugin-dev",
   "displayName": "FxTwitter Dev",
   "version": "0.0.1-dev",
-  "description": "Read public X content through fxTwitter API",
+  "description": "Read public X content through fxTwitter API v2",
   "author": {
     "name": "Edgestream"
   },

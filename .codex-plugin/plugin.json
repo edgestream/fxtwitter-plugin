@@ -1,14 +1,14 @@
 {
   "name": "fxtwitter-plugin-dev",
   "version": "0.0.1-dev",
-  "description": "Read public X content through fxTwitter API",
+  "description": "Read public X content through fxTwitter API v2",
   "author": {
     "name": "Edgestream"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "fxTwitter Dev",
-    "shortDescription": "Read public X content through fxTwitter API",
+    "shortDescription": "Read public X content through fxTwitter API v2",
     "longDescription": "Reads public posts, conversations, profiles, and feeds directly through fxTwitter API v2",
     "developerName": "Edgestream",
     "category": "Communication",
