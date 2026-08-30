@@ -1,12 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "fxtwitter-plugin-dev",
+  "name": "fxtwitter-dev",
   "displayName": "FxTwitter Dev",
-  "version": "0.0.1-dev",
+  "version": "0.1.0",
   "description": "Read public X content through fxTwitter API v2",
   "author": {
     "name": "Edgestream"
   },
   "license": "MIT",
-  "keywords": ["fxtwitter", "x.com", "twitter", "api-v2"]
+  "keywords": ["fxtwitter", "x.com", "twitter"]
 }

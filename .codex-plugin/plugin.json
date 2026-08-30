@@ -1,6 +1,6 @@
 {
-  "name": "fxtwitter-plugin-dev",
-  "version": "0.0.1-dev",
+  "name": "fxtwitter-dev",
+  "version": "0.1.0",
   "description": "Read public X content through fxTwitter API v2",
   "author": {
     "name": "Edgestream"
@@ -8,16 +8,16 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "fxTwitter Dev",
-    "shortDescription": "Read public X content through fxTwitter API v2",
+    "shortDescription": "Read public X/Twitter content",
     "longDescription": "Reads public posts, conversations, profiles, and feeds directly through fxTwitter API v2",
     "developerName": "Edgestream",
     "category": "Communication",
     "capabilities": ["Read"],
     "defaultPrompt": [
-      "Read https://x.com/OpenAI/status/2082577277246972300 and include the thread context.",
-      "Read recent replies to https://x.com/OpenAI/status/2082577277246972300.",
-      "Read the OpenAI profile and show its latest 10 public posts.",
-      "Read the OpenAI author profile."
+      "Read https://x.com/OpenAI/status/2082577277246972300 and include the thread context",
+      "Read recent replies to https://x.com/OpenAI/status/2082577277246972300",
+      "Read the OpenAI profile and show its latest 10 public posts",
+      "Read the OpenAI author profile"
     ],
     "brandColor": "#1D9BF0",
     "composerIcon": "./assets/fxtwitter.png",
